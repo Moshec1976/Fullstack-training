@@ -8,7 +8,7 @@
     <title>Document</title>
 
     <style>
-        .wrap{
+        .wrap {
             display: grid;
             grid-template-columns: 1fr 3fr 1fr 1fr;
             grid-template-rows: repeat(10, 1fr);
@@ -21,7 +21,7 @@
         /* This is the navbar with the facebook logo, searchbar, etc...  
         I set it up as a felxbox to position all the objects*/
 
-        .nav{
+        .nav {
             grid-column: 1/6;
             grid-row: 1;
             height: 75px;
@@ -29,18 +29,22 @@
             background-color: #3B5998;
             display: flex;
             justify-content: center;
-            
+
         }
 
-        .pages{
+        /* Here in the pages area, I'm setting up a flexbox that is set to columns from top to botton.*/
+
+        .pages {
             grid-column: 1;
             grid-row: 2/10;
             height: 800px;
             width: 90%;
             border: 1px solid red;
+            display: flex;
+            flex-direction: column;
         }
 
-        .wall{
+        .wall {
             grid-column: 2;
             grid-row: 2/10;
             width: 97%;
@@ -48,7 +52,7 @@
             border: 1px solid green;
         }
 
-        .stories{
+        .stories {
             grid-column: 3;
             grid-row: 2/5;
             width: 95%;
@@ -56,7 +60,7 @@
             border: 1px solid blue;
         }
 
-        .randome{
+        .randome {
             grid-column: 3;
             grid-row: 6;
             width: 95%;
@@ -64,7 +68,7 @@
             border: 1px solid black;
         }
 
-        .toppics{
+        .toppics {
             grid-column: 3;
             grid-row: 7/11;
             width: 95%;
@@ -72,7 +76,7 @@
             border: 1px solid green;
         }
 
-        .games{
+        .games {
             width: 95%;
             height: 80px;
             grid-column: 4;
@@ -81,7 +85,7 @@
 
         }
 
-        .mygames{
+        .mygames {
             width: 95%;
             height: 80px;
             grid-column: 4;
@@ -90,7 +94,7 @@
 
         }
 
-        .comunication{
+        .comunication {
             width: 95%;
             height: 620px;
             grid-column: 4;
@@ -98,33 +102,51 @@
             border: 1px solid blue;
 
         }
-        
-        .search{
+
+        .search {
             margin-bottom: 6px;
         }
 
-        .face{
+        .face {
             border-radius: 50%;
             overflow: hidden;
             margin-top: 18px;
         }
 
-        .nav p{
+        .nav p {
             color: white;
             font-size: 20px;
             margin-top: 26px;
             margin-left: 10px;
         }
 
-        .home{
+        .home {
             margin-left: -20px;
         }
 
-        .br{
+        .br {
             color: black;
         }
-        
 
+        .parea {
+            width: 100%;
+            height: 50px;
+            
+        }
+
+        .parea p {
+            margin: 10px 0 0 5px;
+            float: left;
+        }
+
+        .parea img {
+            float: left;
+            margin-top: 0;
+        }
+
+        .parea h3 {
+            color: darkgray;
+        }
     </style>
 </head>
 
@@ -145,7 +167,64 @@
 
         </div>
         <div class="pages">
-
+            <div class="parea">
+                <img src="face.png" alt="" width="40px;" height="40px" class="face">
+                <p>Social media idiot</p>
+            </div>
+            <div class="parea">
+                <img src="newsfeed.png" alt="" width="40px">
+                <p>News feed</p>
+            </div>
+            <div class="parea">
+                <img src="messanger.png" alt="" width="40px">
+                <p>Messenger</p>
+            </div>
+            <div class="parea">
+                <img src="watch.png" alt="" width="40px">
+                <p>Watch</p>
+            </div>
+            <div class="parea">
+                <img src="market.png" alt="" width="40px">
+                <p>Marketplace</p>
+            </div>
+            <div class="parea">
+                <h3>Shortcouts</h3>
+            </div>
+            <div class="parea">
+                <img src="interbit.png" alt="" width="40px">
+                <p>Interbit college</p>
+            </div>
+            <div class="parea">
+                <img src="randome.png" alt="" width="40px">
+                <p>Another sortcut</p>
+            </div>
+            <div class="parea">
+                <h3>Explore</h3>
+            </div>
+            <div class="parea">
+                <img src="flag.png" alt="" width="40px">
+                <p>Pages</p>
+            </div>
+            <div class="parea">
+                <img src="groups.png" alt="" width="40px">
+                <p>Groups</p>
+            </div>
+            <div class="parea">
+                <img src="event.png" alt="" width="40px">
+                <p>Events</p>
+            </div>
+            <div class="parea">
+                <img src="fun.png" alt="" width="40px">
+                <p>Fundraisers</p>
+            </div>
+            <div class="parea">
+                <img src="friends.png" alt="" width="40px">
+                <p>Friends list</p>
+            </div>
+            <div class="parea">
+                    <img src="arrow-down.png" alt="" width="40px">
+                    <p>See more...</p>
+                </div>
         </div>
         <div class="wall">
 
