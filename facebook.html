@@ -59,13 +59,11 @@
             grid-row: 2/5;
             width: 95%;
             height: 350px;
-            border: 1px solid blue;
         }
 
         .storynav {
             width: 100%;
             height: 30px;
-            border: 1px solid black;
             background-color: white;
         }
 
@@ -92,35 +90,48 @@
         .storycontent {
             width: 100%;
             height: 280px;
-            border: 1px solid black;
+            background-color: white;
         }
 
         /* Inside the story content we have 4 content items */
         .content-item {
             width: 100%;
             height: 65px;
-            border: 1px solid red;
         }
 
         .content-pic{
             height: 100%;
             width: 64px;
-            border: 1px solid blue;
-            float: left;
+            float: left; 
         }
+
+     
 
         .content-name{
             height: 20px;
             width: 150px;
-            border: 1px solid green;
             float: left;
+        }
+
+        .content-name p{
+            margin: 0 0 0 5px;
+            color: blue;
         }
 
         .content-text{
             height: 40px;
             width: 220px;
-            border: 1px solid black;
             float: left;
+        }
+
+        .content-text p{
+            margin: 0 0 0 5px;
+            color: gray;
+        }
+
+        .storynav-bottom{
+            display: flex;
+            background-color: white;
         }
 
 
@@ -493,52 +504,53 @@
             <div class="storycontent">
                 <div class="content-item">
                     <div class="content-pic">
-
+                        <img src="my-story.png" alt="">
                     </div>
                     <div class="content-name">
-
+                        <p>Add Your Story</p>
                     </div>
                     <div class="content-text">
-
+                        <p>Share a story, video or some ramdom face no one cares about.</p>
                     </div>
                 </div>
                 <div class="content-item">
                     <div class="content-pic">
-
+                            <img src="story1.png" alt="">
                     </div>
                     <div class="content-name">
-
+                        <p>Random wirdo1</p>
                     </div>
                     <div class="content-text">
-
+                        <p>1 Hour ago</p>
                     </div>
                 </div>
                 <div class="content-item">
                     <div class="content-pic">
-
+                            <img src="story2.png" alt="">
                     </div>
                     <div class="content-name">
-
+                            <p>Random wirdo2</p>
                     </div>
                     <div class="content-text">
-
+                            <p>2 Hours ago</p>
                     </div>
                 </div>
                 <div class="content-item">
                     <div class="content-pic">
-
+                            <img src="story3.png" alt="">
                     </div>
                     <div class="content-name">
-
+                            <p>Random wirdo3</p>
                     </div>
                     <div class="content-text">
-
+                            <p>3 Hours ago</p>
                     </div>
                 </div>
 
             </div>
             <div class="storynav-bottom">
-
+                <img src="arrow-down.png" alt="">
+                <p>See More</p>
             </div>
         </div>
         <div class="randome">
