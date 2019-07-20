@@ -48,7 +48,6 @@
             grid-row: 2/10;
             width: 97%;
             height: 800px;
-            border: 1px solid green;
         }
 
         .stories {
@@ -130,7 +129,7 @@
         .parea {
             width: 100%;
             height: 50px;
-            
+
         }
 
         .parea p {
@@ -147,30 +146,132 @@
             color: darkgray;
         }
 
-        .onyourmind{
+        .wall{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .onyourmind {
             width: 100%;
             height: 150px;
-            border: 1px solid red;
+            border: 1px solid lightgray;
+            background-color: white;
         }
 
-        .topmind{
+        .topmind {
             width: 100%;
             height: 30px;
-            border: 1px solid blue;
+            border: 1px solid lightgray;
+            display: flex;
+            align-items: center;
+            background-color: lightgray;
         }
 
-        .midmind{
+        .topmind p {
+            font-size: 18px;
+            margin-right: 6px;
+            color: rgba(46, 49, 49, 1);
+        }
+
+
+
+        .midmind {
             width: 100%;
             height: 70px;
-            border: 1px solid green;
+            border: 1px solid lightgray;
         }
 
-        .bottommind{
+        .bottommind {
             width: 100%;
             height: 40px;
-            border: 1px solid black;
+
         }
 
+        .midmind {
+            display: flex;
+        }
+
+        .bottommind {
+            display: flex;
+            align-items: center;
+        }
+
+        .photos,
+        .friends,
+        .smile {
+            display: block;
+            height: 35px;
+            width: 150px;
+            border: 1px solid black;
+            border-radius: 15px;
+            background-color: lightgray;
+
+        }
+
+        .elp {
+            display: block;
+            height: 35px;
+            width: 70px;
+            border: 1px solid black;
+            border-radius: 15px;
+            background-color: lightgray;
+        }
+
+        /* This is the post itself*/
+
+        .post {
+            width: 100%;
+            height: 600px;
+            margin-top: 20px;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        .toppost{
+            width: 100%;
+            height: 60px;    
+        }
+
+        .postface{
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            float: left;
+            display: flex;
+            align-items: center;
+        }
+
+        .postname{
+            width: 120px;
+            height: 20px;
+            float: left;
+        }
+
+        .postname p{
+            margin: 0;
+            color: blue;
+        }
+
+        .posttime{
+            width: 120px;
+            height: 18px;
+            float: left;
+            margin-top: 23px;
+            margin-left: -122px;
+        }
+
+        .posttime p{
+            margin: 0;
+            float: left;
+            
+        }
+
+        .star{
+            width: 75px;
+            height: 20px;
+            float: right;
+            
+        }
     </style>
 </head>
 
@@ -246,22 +347,69 @@
                 <p>Friends list</p>
             </div>
             <div class="parea">
-                    <img src="arrow-down.png" alt="" width="40px">
-                    <p>See more...</p>
-                </div>
+                <img src="arrow-down.png" alt="" width="40px">
+                <p>See more...</p>
+            </div>
         </div>
         <div class="wall">
             <div class="onyourmind">
                 <div class="topmind">
-
+                    <p>Create post</p>
+                    <p>|</p>
+                    <p>?</p>
+                    <p style="color: blue;">Q&A</p>
                 </div>
                 <div class="midmind">
+                    <div class="parea">
+                        <img src="face.png" alt="" width="40px;" height="40px" class="face">
+                        <p>What's on your mind, idiot?</p>
 
+                    </div>
                 </div>
                 <div class="bottommind">
-
+                    <div class="photos">
+                        <img src="photo-button.png" alt="">
+                    </div>
+                    <div class="friends">
+                        <img src="friends-button.png" alt="">
+                    </div>
+                    <div class="smile">
+                        <img src="smile-button.png" alt="">
+                    </div>
+                    <div class="elp">
+                        <img src="elp-button.png" alt="">
+                    </div>
                 </div>
 
+
+
+            </div>
+            <div class="post">
+                <div class="toppost">
+                    <div class="postface">
+                        <img src="tim-ferriss.png" alt="">
+                    </div>
+                    <div class="postname">
+                        <p>Tim Ferriss</p>
+                    </div>
+                    <div class="posttime">
+                        <p>15 Hrs</p>
+                        <img src="post-time.png" alt="">
+                    </div>
+                    <div class="star">
+                        <img src="post-star.png" alt="">
+                    </div>
+
+                </div>
+                <div class="middlepost">
+                    <img src="middle-post.png" alt="" width="100%">
+                </div>
+                <div class="bottompost">
+
+                </div>
+                <div class="bottompost2">
+
+                </div>
             </div>
 
         </div>
