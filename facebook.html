@@ -99,37 +99,37 @@
             height: 65px;
         }
 
-        .content-pic{
+        .content-pic {
             height: 100%;
             width: 64px;
-            float: left; 
+            float: left;
         }
 
-     
 
-        .content-name{
+
+        .content-name {
             height: 20px;
             width: 150px;
             float: left;
         }
 
-        .content-name p{
+        .content-name p {
             margin: 0 0 0 5px;
             color: blue;
         }
 
-        .content-text{
+        .content-text {
             height: 40px;
             width: 220px;
             float: left;
         }
 
-        .content-text p{
+        .content-text p {
             margin: 0 0 0 5px;
             color: gray;
         }
 
-        .storynav-bottom{
+        .storynav-bottom {
             display: flex;
             background-color: white;
         }
@@ -140,7 +140,8 @@
             grid-row: 6;
             width: 95%;
             height: 80px;
-            border: 1px solid black;
+            border: 1px solid lightgray;
+            background-color: white;
         }
 
         .toppics {
@@ -148,7 +149,8 @@
             grid-row: 7/11;
             width: 95%;
             height: 350px;
-            border: 1px solid green;
+            border: 1px solid lightgray;
+            background-color: white;
         }
 
         .games {
@@ -156,7 +158,7 @@
             height: 80px;
             grid-column: 4;
             grid-row: 2;
-            border: 1px solid blue;
+            border: 1px solid lightgray;
 
         }
 
@@ -165,7 +167,7 @@
             height: 80px;
             grid-column: 4;
             grid-row: 3;
-            border: 1px solid blue;
+            border: 1px solid lightgray;
 
         }
 
@@ -349,6 +351,123 @@
             float: right;
 
         }
+
+
+        /* This is the game requests area*/
+
+        .randome-item{
+            width: 100%;
+            height: 35%;
+            margin-top: 5px;
+            display: flex;
+        }
+
+        .randome-item h4{
+            font-size: 15px;
+            color: blue;
+            margin: 3px 0 0 5px;
+        }
+
+        .randome-item p{
+            font-size: 14px;
+            color: gray;
+            margin: 3px 0 0 5px;
+        }
+
+        .pic-nav{
+            height: 30px;
+            width: 100%;
+            display: flex;
+        }
+
+        .pic-nav p{
+            margin: 5px 0 0 5px;
+            color: gray;
+        }
+
+        .pic-morons{
+            height: 50px;
+            width: 100%;
+            display: flex;
+        }
+
+        .pic-morons p{
+            font-size: 13px;
+            color: gray;
+            margin: 5px 0 0 5px;
+        }
+
+        .pic-pic{
+            height: 250px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .pic-pic img{
+            width: 95%;
+            margin-left: 5px;     
+        }
+
+        .games-nav{
+            height: 15px;
+            width: 150px;
+            float: left;
+        }
+
+        .games-nav p{
+            color: gray;
+            margin: 0 0 0 5px;
+        }
+
+        .games-nav2{
+            height: 15px;
+            width: 70px;
+            float: right;
+        }
+
+        .games-nav2 p{
+            color: gray;
+            margin: 0 5px 0 0;
+            text-align: right;
+        }
+
+        .games-pic{
+            height: 70px;
+            width: 100%;
+            float: left;
+            display: flex;
+            
+        }
+
+        .games-pic img{
+            margin-left: 45px;
+        }
+
+        .mygames-nav{
+            height: 15px;
+            width: 150px;
+            float: left;
+        }
+        .mygames-nav p{
+            color: gray;
+            margin: 0 0 0 5px;
+        }
+
+        .mygames-nav2{
+            height: 15px;
+            width: 70px;
+            float: right;
+        }
+
+        .mygames-nav2 p{
+            color: gray;
+            margin: 0 5px 0 0;
+            text-align: right;
+        }
+
+        .mygames-pic img{
+            margin-left: 48px;
+        }
     </style>
 </head>
 
@@ -515,7 +634,7 @@
                 </div>
                 <div class="content-item">
                     <div class="content-pic">
-                            <img src="story1.png" alt="">
+                        <img src="story1.png" alt="">
                     </div>
                     <div class="content-name">
                         <p>Random wirdo1</p>
@@ -526,24 +645,24 @@
                 </div>
                 <div class="content-item">
                     <div class="content-pic">
-                            <img src="story2.png" alt="">
+                        <img src="story2.png" alt="">
                     </div>
                     <div class="content-name">
-                            <p>Random wirdo2</p>
+                        <p>Random wirdo2</p>
                     </div>
                     <div class="content-text">
-                            <p>2 Hours ago</p>
+                        <p>2 Hours ago</p>
                     </div>
                 </div>
                 <div class="content-item">
                     <div class="content-pic">
-                            <img src="story3.png" alt="">
+                        <img src="story3.png" alt="">
                     </div>
                     <div class="content-name">
-                            <p>Random wirdo3</p>
+                        <p>Random wirdo3</p>
                     </div>
                     <div class="content-text">
-                            <p>3 Hours ago</p>
+                        <p>3 Hours ago</p>
                     </div>
                 </div>
 
@@ -554,15 +673,54 @@
             </div>
         </div>
         <div class="randome">
+            <div class="randome-item">
+                <img src="berry.png" alt="">
+                <h4>5 Requests</h4>
+                <p>From yo mama</p>
+            </div>
+            <div class="randome-item">
+                <img src="candy.png" alt="">
+                <h4>2 Requests</h4>
+                <p>From yo mama</p>
+            </div>
 
         </div>
         <div class="toppics">
+            <div class="pic-nav">
+                <img src="idiot-market.png" alt="">
+                <p>Top picks on Marketplace</p>
+            </div>
+            <div class="pic-morons">
+                <img src="shaburies.png" alt="">
+                <p>David, Izik and 10K other shaburies but shit they don't need at the marketplace.</p>
+            </div>
+            <div class="pic-pic">
+                <img src="car-pix.png" alt="">
+            </div>
 
         </div>
         <div class="games">
+            <div class="games-nav">
+                <p>Instant games</p>
+            </div>
+            <div class="games-nav2">
+                <p>more</p>
+            </div>
+            <div class="games-pic">
+                <img src="games-pic.png" alt="">
+            </div>
 
         </div>
         <div class="mygames">
+            <div class="mygames-nav">
+                <p>Your games</p>
+            </div>
+            <div class="mygames-nav2">
+                <p>More</p>
+            </div>
+            <div class="mygames-pic">
+                <img src="mygames-pic.png" alt="">
+            </div>
 
         </div>
         <div class="comunication">
